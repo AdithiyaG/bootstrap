@@ -24,7 +24,7 @@ nnpm install font-awesome@4.7.0 --save<!DOCTYPE html>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-           <a class="navbar-brand mr-auto" href="./index.html"><img src="img/logo.png" height="30" width="41"></a>
+           <a class="navbar-brand mr-auto ml-2" href="./index.html"><img src="img/logo.png" height="30" width="41"></a>
            <div class="collapse navbar-collapse" id="Navbar">
               <ul class="navbar-nav mr-auto">
                     <li class="nav-item active"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li><!--fa-lg class for to icons large-->
@@ -42,9 +42,15 @@ nnpm install font-awesome@4.7.0 --save<!DOCTYPE html>
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center d-flex justify-content-center">
+                <div class="col-12 col-sm align-self-center ">
                     <img src="./img/logo.png" class='img-fluid bg-light'>
                 </div>
+                <div class='btn col-12 col-sm-3  align-self-center d-flex  justify-content-center mt-3'>
+                    <a class="btn btn-warning font-weight-bold col-12" role="button"  href="#reserve">
+                        Reserve Table
+                     </a>
+                </div>
+                
             </div>
         </div>
     </header>
@@ -58,7 +64,7 @@ nnpm install font-awesome@4.7.0 --save<!DOCTYPE html>
                 <div class='media'>
                     <img src="./img/uthappizza.png" class="d-flex mr-3 img-thumbnail align-self-center " alt="Uthappizza">
                     <div class='media-body'>
-                        <h2>Uthappizza<span class='badge badge-danger mx-1'>HOT</span><span class='badge badge-secondary badge-pill mx-1'>$4.99</span></h2>
+                        <h2>Uthappizza<span class='badge badge-danger m-1'>HOT</span><span class='badge badge-secondary badge-pill mx-1'>$4.99</span></h2>
                 <p class = 'd-none d-sm-block'>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
                     </div>
                 </div>
@@ -72,8 +78,16 @@ nnpm install font-awesome@4.7.0 --save<!DOCTYPE html>
                 <h3>This Month's Promotions</h3>
             </div>
             <div class='col col-sm col-md'>
-                <h2>Weekend Grand Buffet</h2>
-                <p class = 'd-none d-sm-block'>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                <div class='media'>
+                    <img src="./img/buffet.png" class="d-flex mr-3 img-thumbnail align-self-center order-last" alt="buffet">
+                    <div class='media-body order-first'>
+                        <h2>Weekend Grand Buffet <span class='badge badge-danger m-1'>NEW</span></h2>
+                        <p class = 'd-none d-sm-block'>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                    </div>
+                    
+
+                </div>
+                
             </div>
         </div>
 
@@ -94,6 +108,42 @@ nnpm install font-awesome@4.7.0 --save<!DOCTYPE html>
                 
             </div>
         </div>
+        <div class='col-12 col-md-10 my-5'>
+            <div class='card offset-md-3' id='reserve'>
+                <h3 class='card-header bg-warning text-white'>Reserve A Table</h3>
+                <div class='card-body'>
+                    <form>
+                        <div  class='row form-group'>
+                            <label for='guest' class=' col-12 col-md-2 col-form-label'>Number of Guests</label>
+                            <div class='col-12 col-md-6'>
+                                <input type='radio' name='noofguest' id=guest class='mx-2 mt-3'><strong>1</strong>
+                                <input type='radio' name='noofguest' id=guest class='mx-2 mt-3'><strong>2</strong>
+                                <input type='radio' name='noofguest' id=guest class='mx-2 mt-3'><strong>3</strong>
+                                <input type='radio' name='noofguest' id=guest class='mx-2 mt-3'><strong>4</strong>
+                                <input type='radio' name='noofguest' id=guest class='mx-2 mt-3'><strong>5</strong>
+                                <input type='radio' name='noofguest' id=guest class='mx-2 mt-3'><strong>6</strong>
+
+                            </div>
+                        </div>
+                        
+                        <div class='row form-group'>
+                            <label for='dateandtime' class=' col-12 col-md-2 col-form-label'>Date &amp; Time</label>
+                            <div class=' col-5 col-md-3'>
+                                <input class='form-control'id=dateandtime type=date name='date' placeholder="Date">
+                            </div>
+                            <div class=' col-5 col-md-3'>
+                                <input class='form-control'id='dateandtime' type=time name='time' placeholder="Time">
+                            </div>
+                        </div>
+                        <div class ='form-group row'>
+                            <div class= 'offset-1 offset-md-2'></div>
+                                <button  type=sumbit class='btn btn-primary '>Reserve</button>
+                            </div>
+                    </form>
+                 
+                </div>
+            </div>
+    </div>
     </div>
 
     <footer class='footer'>
