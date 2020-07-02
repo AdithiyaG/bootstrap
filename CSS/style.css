@@ -45,7 +45,8 @@ body {
       position: absolute;
       top: 0;
       left: 0;
-      min-height: 300px; }
+      min-height: 300px;
+      max-width: 300px; }
     .carousel .carousel-item .carousel-caption {
       position: relative;
       padding-top: 100px;
@@ -59,3 +60,15 @@ body {
   position: absolute;
   bottom: 0px;
   z-index: 1; }
+
+.modal-header {
+  background-color: #512DA8; }
+  .modal-header .modal-title {
+    color: floralwhite; }
+  .modal-header [data-dismiss='modal'] {
+    color: floralwhite; }
+  .modal-header [data-dismiss='modal']:hover {
+    color: white; }
+
+.modal-body {
+  background-color: #D1C4E9; }

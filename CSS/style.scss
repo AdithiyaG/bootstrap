@@ -63,6 +63,7 @@ body{
             top: 0;
             left: 0;
             min-height: 300px;
+            max-width: 300px;
         }
         .carousel-caption{
             position: relative;
@@ -81,4 +82,21 @@ body{
     position: absolute;
     bottom: 0px;
     z-index: 1;
+}
+.modal-header{
+    background-color: $background-dark;
+    .modal-title{
+        color:floralwhite;
+    }
+    [data-dismiss='modal']{
+        color: floralwhite;
+    }
+    [data-dismiss='modal']:hover{
+        color:white;
+
+    }
+    
+}
+.modal-body{
+    background-color: $background-pale;
 }
